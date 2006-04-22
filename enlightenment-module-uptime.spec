@@ -1,7 +1,3 @@
-#
-# TODO:
-# - add pl
-#
 %define		_module_name	uptime
 %define		_snap	20060420
 Summary:	Enlightenment DR17 module: %{_module_name}
@@ -26,6 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Very simple uptime monitor.
+
+%description -l pl
+Bardzo prosty monitor czasu dzia³ania systemu.
 
 %prep
 %setup -q -n %{_module_name}
